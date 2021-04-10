@@ -1,0 +1,58 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import "~vue-snotify/styles/material";
+
+select.minimal {
+    background-image:
+    linear-gradient(45deg, transparent 50%, #17a2b8 50%),
+    linear-gradient(135deg, #17a2b8 50%, transparent 50%),
+    linear-gradient(to right, #17a2b8, #17a2b8) !important;
+    background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+    background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+    background-repeat: no-repeat;
+    margin-left: 0px !important;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    text-decoration: none;
+}
+select.minimal:focus {
+    background-image:
+    linear-gradient(45deg, #17a2b8 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, #17a2b8 50%),
+    linear-gradient(to right, #17a2b8, #17a2b8) !important;
+    background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+    background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+    background-repeat: no-repeat;
+    border: 1px solid #17a2b8;
+    border-bottom: 1px solid #17a2b8 !important;
+    outline: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    text-decoration: none;
+}
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #17a2b8;
+}
